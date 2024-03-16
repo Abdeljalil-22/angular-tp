@@ -6,6 +6,7 @@ import { Personne } from './class/personne';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HighlightDirective } from './directive/highlight.directive';
+import { ObjectArrayPipe } from './pipe/object-array.pipe';
 
 
 @Component({
@@ -16,6 +17,7 @@ import { HighlightDirective } from './directive/highlight.directive';
    FormsModule,
    CommonModule,
    HighlightDirective,
+   ObjectArrayPipe
 
     // ChronoComponent
   ],
@@ -31,7 +33,7 @@ console.log("test",arg0)
   title = 'my-app';
   data ="test data"
   text= 'file'
- p =new Personne("22","test","test"); 
+ p =new Personne("22","test1","test22"); 
  list = [1,2,3,45,5,5]
 
 }

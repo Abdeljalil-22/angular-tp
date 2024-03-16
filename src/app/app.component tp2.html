@@ -1,0 +1,39 @@
+<!-- <h2> Bonjour</h2>
+<div>
+  <span>{{title}} est une application Angular</span>
+</div>
+<app-header></app-header>
+<app-chrono [data]="data"></app-chrono> -->
+
+
+
+<h1>hello</h1>
+
+<ul>
+  <li [textContent]="p.num"></li>
+  <li appHighlight> {{p.nom}}</li>
+
+  <li>{{p.prenom}}</li>
+
+</ul>
+<!-- {{title}} -->
+
+
+<ul>
+  @for (i of list; track $index) {
+    @if($index==1){
+      <li > if  test {{$index}}</li>
+    }@else {
+      <li > else  test  {{i}}</li>
+    }
+
+  }
+
+ <!-- <li *ngFor="let i of list; let j = index"  >
+{{i}}:{{j}}
+</li> -->
+
+</ul>
+
+
+<input (click)="onclick(1)" [required]="isYes" type="text" [(ngModel)]="p.nom">
